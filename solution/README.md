@@ -13,7 +13,7 @@
   	 Port: 9300
   6)sudo docker run -d -p "9393:9300" -e CSVSERVER_BORDER="Orange" -v ${PWD}/inputFile:/csvserver/inputdata --name server infracloudio/csvserver:latest
 
-    Now, the application is accessible on the host at http://localhost:9393
+  Now, the application is accessible on the host at http://localhost:9393
 
     
 # Part 2:
@@ -21,11 +21,20 @@
   1)Deleted containers by docker rm command
   2)Written docker-compose.yaml file.
   3)and able to run the application by docker-compose up command.
-    Linux terminal O/P
-    prashant@prashant-E6420:~/Assignment/csvserver$ sudo docker-compose up
-    Starting csvserver_server_1 ... done
-    Attaching to csvserver_server_1
-    server_1  | 2020/11/27 04:13:00 listening on ****
+   Linux terminal O/P
+   prashant@prashant-E6420:~/Assignment/csvserver$ sudo docker-compose up
+   Starting csvserver_server_1 ... done
+   Attaching to csvserver_server_1
+   server_1  | 2020/11/27 04:13:00 listening on ****
 
 
+# Part 3:
+  1)Added Prometheus container (prom/prometheus:v2.22.0) to the docker-compose.yaml form part II.
+  2)configured prometheus.yml
+  3)sudo docker-compose up
+   Linux terminal O/P :
+   Starting csvserver_prometheus_1 ... done
+   Starting csvserver_server_1     ... done
+   Attaching to csvserver_prometheus_1, csvserver_server_1
+   
 
