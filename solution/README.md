@@ -16,7 +16,16 @@
     Now, the application is accessible on the host at http://localhost:9393
 
     
+# Part 2:
 
+  1)Deleted containers by docker rm command
+  2)Written docker-compose.yaml file.
+  3)and able to run the application by docker-compose up command.
+    Linux terminal O/P
+    prashant@prashant-E6420:~/Assignment/csvserver$ sudo docker-compose up
+    Starting csvserver_server_1 ... done
+    Attaching to csvserver_server_1
+    server_1  | 2020/11/27 04:13:00 listening on ****
 
 
 
