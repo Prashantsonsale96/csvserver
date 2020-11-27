@@ -8,4 +8,10 @@ services:
       CSVSERVER_BORDER: Orange
     volumes:
       - ./inputFile:/csverver/inputdata
+  prometheus:
+    image: "prom/prometheus:v2.22.0"
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yaml:/etc/prometheus/prometheus.yaml
 
